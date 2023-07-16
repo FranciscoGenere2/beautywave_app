@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:beautywave/home_page.dart';
 import 'package:beautywave/login_page.dart';
 import 'package:beautywave/settings_page.dart';
+import 'package:beautywave/register_page.dart';
 
 void main() => runApp(const MyApp());
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const LoginPage(),
         '/home': (context) => const MyHomePage(),
+        '/register': (context) => RegisterPage(),
       },
       onGenerateRoute: (settings) {
         if (settings.name == '/settings') {

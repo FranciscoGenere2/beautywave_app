@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1079294030616",
+    "project_id": "beautywave-d66e3",
+    "storage_bucket": "beautywave-d66e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079294030616:android:92186459b5aca5faa6a46d",
+        "android_client_info": {
+          "package_name": "beautywave.uno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079294030616-du4f97fo636mi2iejc873haup2ormvf1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWPOXBapwT-e4eIAKdJBamwcXSQmWKGdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079294030616-du4f97fo636mi2iejc873haup2ormvf1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -22,114 +22,116 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget _getPage(int index) {
     switch (index) {
       case 0:
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(height: 16),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Expanded(
-                    child: ElevatedButton.icon(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.yellow,
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 8,
-                          horizontal: 16,
+        return SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(height: 16),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Expanded(
+                      child: ElevatedButton.icon(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.yellow,
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 8,
+                            horizontal: 16,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                        icon: const Icon(Icons.calendar_today),
+                        label: const Text(
+                          'Reservar citas',
+                          style: TextStyle(fontSize: 14),
                         ),
-                      ),
-                      icon: const Icon(Icons.calendar_today),
-                      label: const Text(
-                        'Reservar citas',
-                        style: TextStyle(fontSize: 14),
                       ),
                     ),
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: ElevatedButton.icon(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.yellow,
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 8,
-                          horizontal: 16,
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: ElevatedButton.icon(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.yellow,
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 8,
+                            horizontal: 16,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                        icon: const Icon(Icons.shopping_cart),
+                        label: const Text(
+                          'Mis compras',
+                          style: TextStyle(fontSize: 14),
                         ),
-                      ),
-                      icon: const Icon(Icons.shopping_cart),
-                      label: const Text(
-                        'Mis compras',
-                        style: TextStyle(fontSize: 14),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(height: 16),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Expanded(
-                    child: ElevatedButton.icon(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.yellow,
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 8,
-                          horizontal: 16,
+              const SizedBox(height: 16),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Expanded(
+                      child: ElevatedButton.icon(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.yellow,
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 8,
+                            horizontal: 16,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                        icon: const Icon(Icons.confirmation_number),
+                        label: const Text(
+                          'Mis cupones',
+                          style: TextStyle(fontSize: 14),
                         ),
-                      ),
-                      icon: const Icon(Icons.confirmation_number),
-                      label: const Text(
-                        'Mis cupones',
-                        style: TextStyle(fontSize: 14),
                       ),
                     ),
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: ElevatedButton.icon(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.yellow,
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 8,
-                          horizontal: 16,
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: ElevatedButton.icon(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.yellow,
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 8,
+                            horizontal: 16,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                        icon: const Icon(Icons.photo_library),
+                        label: const Text(
+                          'Ver mis fotos',
+                          style: TextStyle(fontSize: 14),
                         ),
-                      ),
-                      icon: const Icon(Icons.photo_library),
-                      label: const Text(
-                        'Ver mis fotos',
-                        style: TextStyle(fontSize: 14),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(height: 16),
-            StylistsSection(),
-            const SizedBox(height: 16),
-            GallerySection(),
-          ],
+              const SizedBox(height: 16),
+              StylistsSection(),
+              const SizedBox(height: 16),
+              GallerySection(),
+            ],
+          ),
         );
       case 1:
         return Center(
